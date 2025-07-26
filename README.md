@@ -1,5 +1,7 @@
-Hi 👋, I'm Arif Alam
+Hi , I'm Arif Alam
+
 An AI | Cloud | DevOps Engineer from Noida, India 🇮🇳
+
 I am passionate about building intelligent, scalable systems that bridge the gap between cutting-edge technology and real-world impact. Currently, I'm an AI | Cloud | DevOps Engineer at HCL Technologies and pursuing an MBA in Operations & Data Science from NMIMS.
 
 🔭 I’m currently focused on integrating AI solutions with robust cloud infrastructure and building end-to-end MLOps pipelines.
