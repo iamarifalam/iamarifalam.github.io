@@ -4666,89 +4666,53 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-      <!--
+           <!--
+        - #CONTACT
+      -->
 
-        - #CONTACT
+      <article class="contact" data-page="contact">
 
-      -->
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
 
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112137.63328557879!2d77.30058814234802!3d28.56143990885233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1680609312294!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
 
+        <section class="contact-form">
 
-      <article class="contact" data-page="contact">
+          <h3 class="h3 form-title">Contact Form</h3>
 
+          <!-- 
+            UPDATED FORM TAG: 
+            - Your personal Formspree link has been added.
+            - The form is now fully functional.
+          -->
+          <form action="https://formspree.io/f/xanbdqqp" method="POST" class="form" data-form>
 
+            <div class="input-wrapper">
+              <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
 
-        <header>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
 
-          <h2 class="h2 article-title">Contact</h2>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-        </header>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
 
+          </form>
 
+        </section>
 
-        <section class="mapbox" data-mapbox>
-
-          <figure>
-
-            <iframe
-
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112137.63328557879!2d77.30058814234802!3d28.56143990885233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1680609312294!5m2!1sen!2sin"
-
-              width="400" height="300" loading="lazy"></iframe>
-
-          </figure>
-
-        </section>
-
-
-
-        <section class="contact-form">
-
-
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-
-
-          <form action="#" class="form" data-form>
-
-
-
-            <div class="input-wrapper">
-
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-
-            </div>
-
-
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-
-              <ion-icon name="paper-plane"></ion-icon>
-
-              <span>Send Message</span>
-
-            </button>
-
-
-
-          </form>
-
-
-
-        </section>
-
-
-
-      </article>
+      </article>
 
 
 
