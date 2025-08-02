@@ -779,163 +779,217 @@ main {
 
 
 
-<!--
-- #RESUME
--->
+/*-----------------------------------*\
 
-<article class="resume" data-page="resume">
+  #RESUME
 
-  <header>
-    <!-- This div now contains the title and the button -->
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
-      <h2 class="h2 article-title" style="margin-bottom: 0;">Resume</h2>
-      
-      <!-- This is the button with your direct resume link -->
-      <a href="https://drive.google.com/file/d/1ti54ZxiHYiKCSEcA746w2BcQmJT9zJPI/view?usp=sharing" target="_blank" class="resume-btn">
-        <ion-icon name="download-outline"></ion-icon>
-        <span>Download Resume</span>
-      </a>
-    </div>
-  </header>
+\*-----------------------------------*/
 
-  <section class="timeline">
 
-    <div class="title-wrapper">
-      <div class="icon-box">
-        <ion-icon name="book-outline"></ion-icon>
-      </div>
-      <h3 class="h3">Education</h3>
-    </div>
 
-    <ol class="timeline-list">
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">NMIMS</h4>
-        <span>Pursuing</span>
-        <p class="timeline-text">
-          MBA in Operations & Data Science.
-        </p>
-      </li>
-    </ol>
+.article-title { margin-bottom: 30px; }
 
-  </section>
 
-  <section class="timeline">
 
-    <div class="title-wrapper">
-      <div class="icon-box">
-        <ion-icon name="briefcase-outline"></ion-icon>
-      </div>
-      <h3 class="h3">Experience</h3>
-    </div>
 
-    <ol class="timeline-list">
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">AI | Cloud | DevOps Engineer</h4>
-        <span>HCL Technologies</span>
-        <p class="timeline-text">
-          Focusing on integrating cutting-edge AI solutions with robust cloud infrastructure to deliver high-impact solutions.
-        </p>
-      </li>
-    </ol>
 
-  </section>
+/**
 
-  <section class="skill">
+ * education and experience 
 
-    <h3 class="h3 skills-title">My skills</h3>
+ */
 
-    <ul class="skills-list content-card">
 
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">Languages & Databases</h5>
-          <data value="90">90%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 90%;"></div>
-        </div>
-      </li>
 
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">Cloud & DevOps</h5>
-          <data value="85">85%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 85%;"></div>
-        </div>
-      </li>
+.timeline { margin-bottom: 30px; }
 
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">ML & AI Tools</h5>
-          <data value="80">80%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 80%;"></div>
-        </div>
-      </li>
 
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">Frontend</h5>
-          <data value="75">75%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 75%;"></div>
-        </div>
-      </li>
 
-    </ul>
+.timeline .title-wrapper {
 
-  </section>
+  display: flex;
 
-</article>
+  align-items: center;
 
-<!-- 
-  This CSS is now included. Please add it to the main <style> tag in your HTML file's <head> section.
--->
-<style>
-.resume-btn {
-  position: relative;
-  background: var(--border-gradient-onyx);
-  color: var(--orange-yellow-crayola);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 18px;
-  border-radius: 14px;
-  font-size: var(--fs-6);
-  text-transform: capitalize;
-  box-shadow: var(--shadow-3);
-  z-index: 1;
-  transition: var(--transition-1);
-  text-decoration: none;
+  gap: 15px;
+
+  margin-bottom: 25px;
+
 }
 
-.resume-btn::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  background: var(--bg-gradient-jet);
-  border-radius: inherit;
-  z-index: -1;
-  transition: var(--transition-1);
+
+
+.timeline-list {
+
+  font-size: var(--fs-6);
+
+  margin-left: 45px;
+
 }
 
-.resume-btn ion-icon {
-  font-size: 18px;
+
+
+.timeline-item { position: relative; }
+
+
+
+.timeline-item:not(:last-child) { margin-bottom: 20px; }
+
+
+
+.timeline-item-title {
+
+  font-size: var(--fs-6);
+
+  line-height: 1.3;
+
+  margin-bottom: 7px;
+
 }
 
-.resume-btn:hover {
-  background: var(--bg-gradient-yellow-1);
+
+
+.timeline-list span {
+
+  color: var(--vegas-gold);
+
+  font-weight: var(--fw-400);
+
+  line-height: 1.6;
+
 }
 
-.resume-btn:hover::before {
-  background: var(--bg-gradient-yellow-2);
+
+
+.timeline-item:not(:last-child)::before {
+
+  content: "";
+
+  position: absolute;
+
+  top: -25px;
+
+  left: -30px;
+
+  width: 1px;
+
+  height: calc(100% + 50px);
+
+  background: var(--jet);
+
 }
-</style>
+
+
+
+.timeline-item::after {
+
+  content: "";
+
+  position: absolute;
+
+  top: 5px;
+
+  left: -33px;
+
+  height: 6px;
+
+  width: 6px;
+
+  background: var(--text-gradient-yellow);
+
+  border-radius: 50%;
+
+  box-shadow: 0 0 0 4px var(--jet);
+
+}
+
+
+
+.timeline-text {
+
+  color: var(--light-gray);
+
+  font-weight: var(--fw-300);
+
+  line-height: 1.6;
+
+}
+
+
+
+
+
+/**
+
+ * skills 
+
+ */
+
+
+
+.skills-title { margin-bottom: 20px; }
+
+
+
+.skills-list { padding: 20px; }
+
+
+
+
+
+.skills-item:not(:last-child) { margin-bottom: 15px; }
+
+
+
+.skill .title-wrapper {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  margin-bottom: 8px;
+
+}
+
+
+
+.skill .title-wrapper data {
+
+  color: var(--light-gray);
+
+  font-size: var(--fs-7);
+
+  font-weight: var(--fw-300);
+
+}
+
+
+
+.skill-progress-bg {
+
+  background: var(--jet);
+
+  width: 100%;
+
+  height: 8px;
+
+  border-radius: 10px;
+
+}
+
+
+
+.skill-progress-fill {
+
+  background: var(--text-gradient-yellow);
+
+  height: 100%;
+
+  border-radius: inherit;
+
+}
 
 /*-----------------------------------*\
   #PORTFOLIO
