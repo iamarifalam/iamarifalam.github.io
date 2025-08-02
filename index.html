@@ -780,216 +780,115 @@ main {
 
 
 /*-----------------------------------*\
-
-  #RESUME
-
+  #RESUME
 \*-----------------------------------*/
-
-
 
 .article-title { margin-bottom: 30px; }
 
 
-
-
-
 /**
-
- * education and experience 
-
- */
-
-
+ * education and experience 
+ */
 
 .timeline { margin-bottom: 30px; }
 
-
-
 .timeline .title-wrapper {
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 15px;
-
-  margin-bottom: 25px;
-
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
 }
-
-
 
 .timeline-list {
-
-  font-size: var(--fs-6);
-
-  margin-left: 45px;
-
+  font-size: var(--fs-6);
+  margin-left: 45px;
 }
-
-
 
 .timeline-item { position: relative; }
 
-
-
 .timeline-item:not(:last-child) { margin-bottom: 20px; }
 
-
-
 .timeline-item-title {
-
-  font-size: var(--fs-6);
-
-  line-height: 1.3;
-
-  margin-bottom: 7px;
-
+  font-size: var(--fs-6);
+  line-height: 1.3;
+  margin-bottom: 7px;
 }
-
-
 
 .timeline-list span {
-
-  color: var(--vegas-gold);
-
-  font-weight: var(--fw-400);
-
-  line-height: 1.6;
-
+  color: var(--vegas-gold);
+  font-weight: var(--fw-400);
+  line-height: 1.6;
 }
-
-
 
 .timeline-item:not(:last-child)::before {
-
-  content: "";
-
-  position: absolute;
-
-  top: -25px;
-
-  left: -30px;
-
-  width: 1px;
-
-  height: calc(100% + 50px);
-
-  background: var(--jet);
-
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  width: 1px;
+  height: calc(100% + 50px);
+  background: var(--jet);
 }
-
-
 
 .timeline-item::after {
-
-  content: "";
-
-  position: absolute;
-
-  top: 5px;
-
-  left: -33px;
-
-  height: 6px;
-
-  width: 6px;
-
-  background: var(--text-gradient-yellow);
-
-  border-radius: 50%;
-
-  box-shadow: 0 0 0 4px var(--jet);
-
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: var(--text-gradient-yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--jet);
 }
-
-
 
 .timeline-text {
-
-  color: var(--light-gray);
-
-  font-weight: var(--fw-300);
-
-  line-height: 1.6;
-
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
 }
-
-
-
 
 
 /**
-
- * skills 
-
- */
-
-
+ * skills 
+ */
 
 .skills-title { margin-bottom: 20px; }
-
-
 
 .skills-list { padding: 20px; }
 
 
-
-
-
 .skills-item:not(:last-child) { margin-bottom: 15px; }
 
-
-
 .skill .title-wrapper {
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 5px;
-
-  margin-bottom: 8px;
-
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 8px;
 }
-
-
 
 .skill .title-wrapper data {
-
-  color: var(--light-gray);
-
-  font-size: var(--fs-7);
-
-  font-weight: var(--fw-300);
-
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
 }
-
-
 
 .skill-progress-bg {
-
-  background: var(--jet);
-
-  width: 100%;
-
-  height: 8px;
-
-  border-radius: 10px;
-
+  background: var(--jet);
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
 }
-
-
 
 .skill-progress-fill {
-
-  background: var(--text-gradient-yellow);
-
-  height: 100%;
-
-  border-radius: inherit;
-
+  background: var(--text-gradient-yellow);
+  height: 100%;
+  border-radius: inherit;
 }
+
+
+
+
 
 /*-----------------------------------*\
   #PORTFOLIO
@@ -1254,6 +1153,46 @@ textarea.form-input::-webkit-resizer { display: none; }
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
 
+/* CSS for the Download Resume Button */
+.resume-btn {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-3);
+  z-index: 1;
+  transition: var(--transition-1);
+  text-decoration: none;
+}
+
+.resume-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+  transition: var(--transition-1);
+}
+
+.resume-btn ion-icon {
+  font-size: 18px;
+}
+
+.resume-btn:hover {
+  background: var(--bg-gradient-yellow-1);
+}
+
+.resume-btn:hover::before {
+  background: var(--bg-gradient-yellow-2);
+}
 
 
 
@@ -1970,7 +1909,7 @@ textarea.form-input::-webkit-resizer { display: none; }
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:ariflm10@gmail.com" class="contact-link">ariflm10@gmail.com</a>
+              <a href="mailto:arif.alam@example.com" class="contact-link">arif.alam@example.com</a>
             </div>
 
           </li>
@@ -2198,7 +2137,13 @@ textarea.form-input::-webkit-resizer { display: none; }
       <article class="resume" data-page="resume">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+            <h2 class="h2 article-title" style="margin-bottom: 0;">Resume</h2>
+            <a href="https://drive.google.com/file/d/1ti54ZxiHYiKCSEcA746w2BcQmJT9zJPI/view?usp=sharing" target="_blank" class="resume-btn">
+              <ion-icon name="download-outline"></ion-icon>
+              <span>Download Resume</span>
+            </a>
+          </div>
         </header>
 
         <section class="timeline">
@@ -2207,24 +2152,17 @@ textarea.form-input::-webkit-resizer { display: none; }
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
             </div>
-
             <h3 class="h3">Education</h3>
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">NMIMS</h4>
-
               <span>Pursuing</span>
-
               <p class="timeline-text">
                 MBA in Operations & Data Science.
               </p>
-
             </li>
-
           </ol>
 
         </section>
@@ -2235,24 +2173,17 @@ textarea.form-input::-webkit-resizer { display: none; }
             <div class="icon-box">
               <ion-icon name="briefcase-outline"></ion-icon>
             </div>
-
             <h3 class="h3">Experience</h3>
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">AI | Cloud | DevOps Engineer</h4>
-
               <span>HCL Technologies</span>
-
               <p class="timeline-text">
                 Focusing on integrating cutting-edge AI solutions with robust cloud infrastructure to deliver high-impact solutions.
               </p>
-
             </li>
-
           </ol>
 
         </section>
@@ -2319,18 +2250,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
       <article class="portfolio" data-page="portfolio">
 
-      <header>
-    <!-- This div now contains the title and the button -->
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
-      <h2 class="h2 article-title" style="margin-bottom: 0;">Resume</h2>
-      
-      <!-- This is the button with your direct resume link -->
-      <a href="https://drive.google.com/file/d/1ti54ZxiHYiKCSEcA746w2BcQmJT9zJPI/view?usp=sharing" target="_blank" class="resume-btn">
-        <ion-icon name="download-outline"></ion-icon>
-        <span>Download Resume</span>
-      </a>
-    </div>
-  </header>
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
 
         <section class="projects">
 
@@ -2441,8 +2363,8 @@ textarea.form-input::-webkit-resizer { display: none; }
         </section>
 
       </article>
-	    
-<!--
+
+      <!--
         - #CONTACT
       -->
 
@@ -2464,11 +2386,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <!-- 
-            UPDATED FORM TAG: 
-            - Your personal Formspree link has been added.
-            - The form is now fully functional.
-          -->
           <form action="https://formspree.io/f/xanbdqqp" method="POST" class="form" data-form>
 
             <div class="input-wrapper">
@@ -2489,7 +2406,7 @@ textarea.form-input::-webkit-resizer { display: none; }
         </section>
 
       </article>
-	    
+
     </div>
 
   </main>
